@@ -4,12 +4,14 @@ import React from "react";
 import Footer from "../Componets/Footer/Footer";
 import Navbar from "../Componets/Navbar/Navbar";
 import EnquiryForm from "../Componets/EnquiryForm/EnquiryForm";
+ 
 // import "../about/about.css";
 import Link from "next/link";
 import { FaClock, FaCalendarCheck, FaUsers } from "react-icons/fa";
  
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
-export default function Page() {
+export default function page() {
+ 
   return (
     <>
       <Navbar />
