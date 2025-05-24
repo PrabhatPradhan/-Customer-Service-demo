@@ -58,7 +58,7 @@ export default function Page() {
             <Link href="/">Home</Link> / Feedback
           </p>
         </div>
-        <div className="mt-6 mt-10  md:mt-0">
+        <div className="  mt-10  md:mt-0">
           <img
             src="https://handyman.fixherotheme.com/wp-content/uploads/2023/09/man.png"
             alt="Repairman"
@@ -76,7 +76,7 @@ export default function Page() {
             <p className="text-gray-700 text-base leading-relaxed">
               At <strong>Minto Holidays</strong>, your happiness drives everything we do...
               <br /><br />
-              <strong>Share Your Experience</strong> At Minto Holidays, your happiness drives everything we do. Your feedback helps us enhance our services, ensuring every trip is truly unforgettable. Whether it’s a suggestion, compliment, or constructive insight, your voice matters. It shows us what we’re doing right and where we can improve. 💬 By sharing your experience, you’re not just helping us—you’re shaping better holidays for future travelers. We value your time and are committed to turning your feedback into action. ✍️ Share Your Experience We’d love to hear from you! Whether you’ve just returned or are planning your next trip, let us know how we can make your next holiday even more special. Thank you for being part of the Minto Holidays family. We can’t wait to welcome you back soon! 🏖️✈️
+              <strong>Share Your Experience</strong> At Minto Holidays, your happiness drives everything we do. Your feedback helps us enhance our services, ensuring every trip is truly unforgettable. Whether its a suggestion, compliment, or constructive insight, your voice matters. It shows us what were doing right and where we can improve. 💬 By sharing your experience, you’re not just helping us—you’re shaping better holidays for future travelers. We value your time and are committed to turning your feedback into action. ✍️ Share Your Experience We’d love to hear from you! Whether you’ve just returned or are planning your next trip, let us know how we can make your next holiday even more special. Thank you for being part of the Minto Holidays family. We can’t wait to welcome you back soon! 🏖️✈️
             </p>
           </div>
 
