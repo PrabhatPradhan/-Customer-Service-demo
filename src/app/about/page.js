@@ -197,8 +197,8 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-white mt-10">
+        <div className=" ">
           {/* Section Header */}
           <div className="text-center mb-12">
             <p className="text-orange-600 font-semibold text-sm sm:text-base">
@@ -212,10 +212,10 @@ export default function Page() {
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-12 w-full">
             {/* Left side Steps */}
-            <div className="space-y-10">
+            <div className="space-y-10 mt-9 px-4 sm:px-6 lg:px-24">
               {/* Step 1 */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
+                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
                   <h4 className="text-base sm:text-lg font-semibold">
                     Make an Appointment
                   </h4>
@@ -224,17 +224,17 @@ export default function Page() {
                     Maiores harum velit doloremque molestias.
                   </p>
                 </div>
-                <span className="text-orange-600 text-5xl sm:text-6xl font-bold">
+                <span className="text-orange-600 text-4xl sm:text-5xl font-bold">
                   1<sup>st</sup>
                 </span>
               </div>
 
               {/* Step 2 */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <span className="text-orange-600 text-5xl sm:text-6xl font-bold order-1 sm:order-none">
+                <span className="text-orange-600 text-4xl sm:text-5xl font-bold order-1 sm:order-none">
                   2<sup>nd</sup>
                 </span>
-                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
+                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
                   <h4 className="text-base sm:text-lg font-semibold">
                     Select your services
                   </h4>
@@ -247,7 +247,7 @@ export default function Page() {
 
               {/* Step 3 */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
+                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
                   <h4 className="text-base sm:text-lg font-semibold">
                     Confirm for services
                   </h4>
@@ -256,7 +256,7 @@ export default function Page() {
                     Maiores harum velit doloremque molestias.
                   </p>
                 </div>
-                <span className="text-orange-600 text-5xl sm:text-6xl font-bold">
+                <span className="text-orange-600 text-4xl sm:text-5xl font-bold">
                   3<sup>rd</sup>
                 </span>
               </div>
@@ -267,7 +267,7 @@ export default function Page() {
               <img
                 src="https://unicktheme.com/lsicool/assets/images/resources/work-v2-img1.png"
                 alt="Technician"
-                className="w-[35rem] ml-auto"
+                className="w-[35rem]  ml-auto"
               />
             </div>
           </div>
