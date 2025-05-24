@@ -8,7 +8,7 @@ import StatsOfNumbers from "../Componets/StatsOfNumbers/StatsOfNumbers";
 import Link from "next/link";
 
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
-export default function page() {
+export default function Page() {
   return (
     <>
       <Navbar />

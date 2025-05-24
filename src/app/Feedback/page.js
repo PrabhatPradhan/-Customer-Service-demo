@@ -6,7 +6,7 @@ import EnquiryForm from "../Componets/EnquiryForm/EnquiryForm";
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
 import Link from "next/link";
  
-export default function page() {
+export default function Page() {
   const [testimonials, setTestimonials] = useState([
     {
       name: "Rakhi Rathore",
