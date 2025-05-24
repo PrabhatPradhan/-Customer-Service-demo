@@ -4,6 +4,7 @@ import Navbar from "../Componets/Navbar/Navbar";
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
 import Link from "next/link";
 import StatsOfNumbers from "../Componets/StatsOfNumbers/StatsOfNumbers";
+
 export default function PrivacyPolicyPage() {
   return (
     <>
@@ -12,7 +13,7 @@ export default function PrivacyPolicyPage() {
       <EnquiryForm />
       <section
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1713557112617-e12d67bddc3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, // Replace with actual image path or URL
+          backgroundImage: `url('https://images.unsplash.com/photo-1713557112617-e12d67bddc3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -20,7 +21,6 @@ export default function PrivacyPolicyPage() {
       >
         <div>
           <h1 className="text-4xl md:text-5xl mt-10 font-bold text-[#0f172a] mb-2">
-            {" "}
             PrivacyPolicy
           </h1>
           <p className="text-[#666] text-base">
@@ -28,17 +28,17 @@ export default function PrivacyPolicyPage() {
           </p>
         </div>
       </section>
+
       <div className="px-6 py-10 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between w-full px-6 py-12 bg-gradient-to-r from-blue-50 to-white">
           <div className="md:w-1/2 space-y-4 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-bold">
-              <span className="text-orange-400">Privacy Policies</span> are
-              required
+              <span className="text-orange-400">Privacy Policies</span> are required
               <br />
               by law get compliant today
             </h1>
             <p className="text-gray-600">
-              We generate custom-made Privacy Policies in second to help keep
+              We generate custom-made Privacy Policies in seconds to help keep
               your business safe. No jargon. No nonsense. No mucking around.
             </p>
           </div>
@@ -67,11 +67,11 @@ export default function PrivacyPolicyPage() {
             />
             <Feature
               title="Global coverage"
-              description="We make every effort to cover every country’s laws and regulations by including the strictest guidelines implemented in each country. Let us serve you wherever you are with a custom-tailored policy according just for you."
+              description="We make every effort to cover every country&rsquo;s laws and regulations by including the strictest guidelines implemented in each country. Let us serve you wherever you are with a custom-tailored policy according just for you."
             />
             <Feature
               title="No more generic templates"
-              description="Only a few steps now, can accurately describe your website, mobile app, blog, store, or your message and we’ll do the rest. Easily build the initiatives you need to operate and maintain the information you provide for the best results."
+              description="Only a few steps now, can accurately describe your website, mobile app, blog, store, or your message and we&rsquo;ll do the rest. Easily build the initiatives you need to operate and maintain the information you provide for the best results."
             />
             <Feature
               title="Automatic updates"
@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
             />
             <Feature
               title="Copy or host the documents"
-              description="We can host your generated policies for you for free so you don’t need any server-side backend component if you don’t want that. We would like to have full control over your documents and you can easily copy the policies to your site or app as well."
+              description="We can host your generated policies for you for free so you don&rsquo;t need any server-side backend component if you don&rsquo;t want that. We would like to have full control over your documents and you can easily copy the policies to your site or app as well."
             />
           </div>
         </section>
@@ -90,10 +90,10 @@ export default function PrivacyPolicyPage() {
           </h2>
           <p className="text-center text-gray-600 max-w-3xl mx-auto">
             Almost every country in the world has some kind of privacy law to
-            protect their citizen’s personal information. That’s why every
+            protect their citizen&rsquo;s personal information. That&rsquo;s why every
             Privacy Policy we generate is adapted to comply with the major
             privacy laws relevant to you. Just tell us where you operate and
-            we’ll customize your Privacy Policy accordingly.
+            we&rsquo;ll customize your Privacy Policy accordingly.
           </p>
           <div className="grid md:grid-cols-3 gap-10 mt-10 text-center">
             <div>
@@ -101,7 +101,7 @@ export default function PrivacyPolicyPage() {
               <p className="text-gray-600">
                 CCPA & CalOPPA protect personal data belonging to residents of
                 California. If you collect or store information from users in
-                the US, we’ll make sure your Privacy Policy complies with CCPA &
+                the US, we&rsquo;ll make sure your Privacy Policy complies with CCPA &amp;
                 CalOPPA laws.
               </p>
             </div>
@@ -123,6 +123,7 @@ export default function PrivacyPolicyPage() {
           </div>
         </section>
       </div>
+
       <StatsOfNumbers />
       <Footer />
     </>

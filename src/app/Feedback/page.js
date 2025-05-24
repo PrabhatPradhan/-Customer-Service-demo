@@ -5,7 +5,7 @@ import Navbar from "../Componets/Navbar/Navbar";
 import EnquiryForm from "../Componets/EnquiryForm/EnquiryForm";
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
 import Link from "next/link";
- 
+
 export default function Page() {
   const [testimonials, setTestimonials] = useState([
     {
@@ -40,7 +40,10 @@ export default function Page() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.message) return;
-    setTestimonials([{ ...formData, rating: Number(formData.rating) }, ...testimonials]);
+    setTestimonials([
+      { ...formData, rating: Number(formData.rating) },
+      ...testimonials,
+    ]);
     setFormData({ name: "", email: "", message: "", rating: 5 });
   };
 
@@ -48,7 +51,7 @@ export default function Page() {
     <>
       <Navbar />
       <ServiceCenterCard />
-      <EnquiryForm/>
+      <EnquiryForm />
 
       {/* Feedback Hero Section */}
       <section className="bg-gradient-to-r from-[#f0f4ff] to-[#eaf0fc] py-14 px-[5%] flex flex-col md:flex-row items-center justify-between">
@@ -58,7 +61,7 @@ export default function Page() {
             <Link href="/">Home</Link> / Feedback
           </p>
         </div>
-        <div className="  mt-10  md:mt-0">
+        <div className="mt-10 md:mt-0">
           <img
             src="https://handyman.fixherotheme.com/wp-content/uploads/2023/09/man.png"
             alt="Repairman"
@@ -76,14 +79,14 @@ export default function Page() {
             <p className="text-gray-700 text-base leading-relaxed">
               At <strong>Minto Holidays</strong>, your happiness drives everything we do...
               <br /><br />
-              <strong>Share Your Experience</strong> At Minto Holidays, your happiness drives everything we do. Your feedback helps us enhance our services, ensuring every trip is truly unforgettable. Whether its a suggestion, compliment, or constructive insight, your voice matters. It shows us what were doing right and where we can improve. 💬 By sharing your experience, you’re not just helping us—you’re shaping better holidays for future travelers. We value your time and are committed to turning your feedback into action. ✍️ Share Your Experience We’d love to hear from you! Whether you’ve just returned or are planning your next trip, let us know how we can make your next holiday even more special. Thank you for being part of the Minto Holidays family. We can’t wait to welcome you back soon! 🏖️✈️
+              <strong>Share Your Experience</strong> At Minto Holidays, your happiness drives everything we do. Your feedback helps us enhance our services, ensuring every trip is truly unforgettable. Whether it&apos;s a suggestion, compliment, or constructive insight, your voice matters. It shows us what we&apos;re doing right and where we can improve. 💬 By sharing your experience, you&apos;re not just helping us—you&apos;re shaping better holidays for future travelers. We value your time and are committed to turning your feedback into action. ✍️ Share Your Experience. We&apos;d love to hear from you! Whether you&apos;ve just returned or are planning your next trip, let us know how we can make your next holiday even more special. Thank you for being part of the Minto Holidays family. We can&apos;t wait to welcome you back soon! 🏖️✈️
             </p>
           </div>
 
           {/* Form */}
           <div className="bg-white shadow-xl rounded-xl p-4 w-full max-w-md mx-auto">
             <h2 className="text-xl font-bold text-gray-800 mb-2 text-center">Feedback Form</h2>
-            <p className="text-gray-600 text-center mb-3 text-sm">We'd love to hear your thoughts!</p>
+            <p className="text-gray-600 text-center mb-3 text-sm">We&apos;d love to hear your thoughts!</p>
             <form className="space-y-3" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Your Name</label>
@@ -161,7 +164,7 @@ export default function Page() {
               <h3 className="font-bold mb-1 capitalize">{item.name}</h3>
               <p className="mb-2 text-sm text-gray-700">{item.message}</p>
               <div className="text-yellow-500 text-lg">
-                {'★'.repeat(item.rating)}{'☆'.repeat(5 - item.rating)}
+                {"★".repeat(item.rating)}{"☆".repeat(5 - item.rating)}
               </div>
             </div>
           ))}
