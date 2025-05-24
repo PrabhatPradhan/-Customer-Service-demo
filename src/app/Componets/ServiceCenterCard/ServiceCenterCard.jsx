@@ -1,17 +1,34 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function ServiceCenterCard() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [showToast, setShowToast] = useState(false);
+  const [animateIn, setAnimateIn] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+      // Start animation after it's visible
+      setTimeout(() => setAnimateIn(true), 50);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowToast(true);
     setTimeout(() => {
       setShowToast(false);
-      setIsVisible(false);
+      setAnimateIn(false);
+      setTimeout(() => setIsVisible(false), 300); // Let exit animation finish
     }, 2000);
+  };
+
+  const handleClose = () => {
+    setAnimateIn(false);
+    setTimeout(() => setIsVisible(false), 300); // Exit animation delay
   };
 
   if (!isVisible) return null;
@@ -20,17 +37,26 @@ export default function ServiceCenterCard() {
     <>
       {/* Modal Overlay */}
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 px-4">
-        <div className="bg-orange-500 w-full max-w-md max-h-[90vh] overflow-y-auto p-6 text-black rounded-xl shadow-lg relative">
+        <div
+          className={`bg-orange-500 w-full max-w-md max-h-[90vh] overflow-y-auto p-6 text-black rounded-xl shadow-lg relative 
+          transition-all duration-500 ease-out transform ${
+            animateIn
+              ? 'opacity-100 scale-100 translate-y-0'
+              : 'opacity-0 scale-95 translate-y-4'
+          }`}
+        >
           {/* Close Button */}
           <button
-            onClick={() => setIsVisible(false)}
+            onClick={handleClose}
             className="absolute top-2 right-3 text-xl font-bold"
           >
             ×
           </button>
 
           {/* Title */}
-          <h2 className="text-center text-2xl font-bold mb-4">SERVICE CENTER</h2>
+          <h2 className="text-center text-2xl font-bold mb-4">
+            SERVICE CENTER
+          </h2>
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-3">
@@ -86,7 +112,7 @@ export default function ServiceCenterCard() {
 
       {/* Toast Notification */}
       {showToast && (
-        <div className="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-2 rounded shadow-lg z-50">
+        <div className="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-2 rounded shadow-lg z-50 transition-opacity duration-500">
           Your form is submitted
         </div>
       )}

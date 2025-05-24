@@ -4,40 +4,47 @@ import Navbar from "../Componets/Navbar/Navbar";
 import Link from "next/link";
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
 import EnquiryForm from "../Componets/EnquiryForm/EnquiryForm";
-import { FaCheckCircle, FaSmile, FaTrophy } from "react-icons/fa";
+import StatsOfNumbers from "../Componets/StatsOfNumbers/StatsOfNumbers"
 export default function Page() {
   return (
     <>
       <Navbar />
-      <EnquiryForm/>
-      <ServiceCenterCard/>
-      <div className="bg-white text-[#111]" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <EnquiryForm />
+      <ServiceCenterCard />
+      <div
+        className="bg-white text-[#111]"
+        style={{ fontFamily: "'Inter', sans-serif" }}
+      >
         {/* Header Section */}
         <section
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1713557112617-e12d67bddc3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, // Replace with actual image path or URL
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="bg-gradient-to-r from-[#f0f4ff] to-[#eaf0fc] py-16 px-[5%] flex flex-col md:flex-row items-center justify-between"
-      >
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-2">
-            {" "}
-            Contact
-          </h1>
-          <p className="text-[#666] text-base">
-            <Link href="/">Home</Link> / Contact
-          </p>
-        </div>
-      </section>
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1713557112617-e12d67bddc3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, // Replace with actual image path or URL
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="bg-gradient-to-r from-[#f0f4ff] to-[#eaf0fc] py-16 px-[5%] flex flex-col md:flex-row items-center justify-between"
+        >
+          <div>
+            <h1 className="text-4xl mt-10 md:text-5xl font-bold text-[#0f172a] mb-2">
+              {" "}
+              Contact
+            </h1>
+            <p className="text-[#666] text-base">
+              <Link href="/">Home</Link> / Contact
+            </p>
+          </div>
+        </section>
         {/* Contact Section */}
         <section className="flex flex-wrap gap-10 justify-between px-[5%] py-16">
           {/* Left */}
           <div className="flex-1 min-w-[300px]">
             {/* Info Cards */}
             <div className="flex flex-wrap gap-5 mb-10">
-              <div className="flex items-center gap-3 bg-white rounded-lg shadow-sm p-5 flex-1 min-w-[220px]">
+              {/* Phone */}
+              <a
+                href="tel:+6845550102"
+                className="flex items-center gap-3 bg-white rounded-lg shadow-sm p-5 flex-1 min-w-[220px] hover:shadow-md transition"
+              >
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/597/597177.png"
                   alt="Phone"
@@ -45,23 +52,39 @@ export default function Page() {
                 />
                 <div>
                   <strong className="text-sm text-[#666] block">Phone:</strong>
-                  <span className="text-base font-bold text-[#111]">(+684) 555-0102</span>
+                  <span className="text-base font-bold text-[#111]">
+                    (+684) 555-0102
+                  </span>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-3 bg-white rounded-lg shadow-sm p-5 flex-1 min-w-[220px]">
+              {/* Email */}
+              <a
+                href="mailto:info@example.com"
+                className="flex items-center gap-3 bg-white rounded-lg shadow-sm p-5 flex-1 min-w-[220px] hover:shadow-md transition"
+              >
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/561/561127.png"
                   alt="Email"
                   className="h-[30px]"
                 />
                 <div>
-                  <strong className="text-sm text-[#666] block">Email Us</strong>
-                  <span className="text-base font-bold text-[#111]">info@example.com</span>
+                  <strong className="text-sm text-[#666] block">
+                    Email Us
+                  </strong>
+                  <span className="text-base font-bold text-[#111]">
+                    info@example.com
+                  </span>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-3 bg-white rounded-lg shadow-sm p-5 flex-1 min-w-[220px]">
+              {/* Address */}
+              <a
+                href="https://www.google.com/maps/search/2972+Westheimer+96+Rd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-white rounded-lg shadow-sm p-5 flex-1 min-w-[220px] hover:shadow-md transition"
+              >
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
                   alt="Address"
@@ -69,18 +92,22 @@ export default function Page() {
                 />
                 <div>
                   <strong className="text-sm text-[#666] block">Address</strong>
-                  <span className="text-base font-bold text-[#111]">2972 Westheimer 96 Rd.</span>
+                  <span className="text-base font-bold text-[#111]">
+                    2972 Westheimer 96 Rd.
+                  </span>
                 </div>
-              </div>
+              </a>
             </div>
 
             {/* Text */}
             <h2 className="text-2xl md:text-3xl font-bold text-[#0f172a]">
-              Need any kind of fixhero help? <span className="text-[#f3842f]">Send us a message</span>
+              Need any kind of fixhero help?{" "}
+              <span className="text-[#f3842f]">Send us a message</span>
             </h2>
             <p className="my-5 text-[#666]">
-              Proactively envisioned multimedia based expertise cross-media growth strategies.
-              Seamlessly visualize quality intellectual capital without superior collaboration.
+              Proactively envisioned multimedia based expertise cross-media
+              growth strategies. Seamlessly visualize quality intellectual
+              capital without superior collaboration.
             </p>
 
             {/* <a
@@ -157,35 +184,7 @@ export default function Page() {
         referrerPolicy="no-referrer-when-downgrade"
       />
 
-
-<div className="overflow-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center mt-20 border-t border-gray-200 pt-16 bg-white">
-  <div className="transition-transform duration-500 hover:scale-105">
-    <div className="flex items-center justify-center gap-3 text-5xl md:text-6xl font-extrabold text-gray-900 animate-bounce">
-      <FaCheckCircle className="text-red-500 text-4xl" />
-      17k
-    </div>
-    <p className="text-sm text-red-600 mt-2 font-medium">Completed Project</p>
-  </div>
-
-  <div className="transition-transform duration-500 hover:scale-105">
-    <div className="flex items-center justify-center gap-3 text-5xl md:text-6xl font-extrabold text-gray-900 animate-pulse">
-      <FaSmile className="text-red-500 text-4xl" />
-      49+
-    </div>
-    <p className="text-sm text-red-600 mt-2 font-medium">Satisfied Clients</p>
-  </div>
-
-  <div className="transition-transform duration-500 hover:scale-105">
-    <div className="flex items-center justify-center gap-3 text-5xl md:text-6xl font-extrabold text-gray-900 animate-bounce">
-      <FaTrophy className="text-red-500 text-4xl" />
-      2k
-    </div>
-    <p className="text-sm text-red-600 mt-2 font-medium">Awards Winner</p>
-  </div>
-</div>
-
-
-      
+      <StatsOfNumbers />
 
       <Footer />
     </>

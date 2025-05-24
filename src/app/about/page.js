@@ -1,17 +1,14 @@
-
 "use client";
 import React from "react";
 import Footer from "../Componets/Footer/Footer";
 import Navbar from "../Componets/Navbar/Navbar";
 import EnquiryForm from "../Componets/EnquiryForm/EnquiryForm";
- 
-// import "../about/about.css";
+import StatsOfNumbers from "../Componets/StatsOfNumbers/StatsOfNumbers";
+
 import Link from "next/link";
-import { FaClock, FaCalendarCheck, FaUsers } from "react-icons/fa";
- 
+
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
 export default function page() {
- 
   return (
     <>
       <Navbar />
@@ -26,7 +23,7 @@ export default function page() {
         className="bg-gradient-to-r from-[#f0f4ff] to-[#eaf0fc] py-16 px-[5%] flex flex-col md:flex-row items-center justify-between"
       >
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-2">
+          <h1 className="text-4xl mt-10 md:text-5xl font-bold text-[#0f172a] mb-2">
             {" "}
             About
           </h1>
@@ -171,7 +168,9 @@ export default function page() {
 
             {/* Phone Row */}
             <div className="mt-6 flex items-center gap-4">
-              <div className="text-3xl">📞</div>
+              <a href="tel:+6845550102">
+                <div className="text-3xl cursor-pointer">📞</div>
+              </a>
               <div>
                 <p className="text-sm">Call anytime</p>
                 <p className="text-xl font-semibold">+000-987458741</p>
@@ -182,14 +181,16 @@ export default function page() {
           {/* Right Play Button */}
           <div className="relative mt-12 lg:mt-0">
             <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center relative z-10">
-              <div className="text-orange-600 text-3xl">▶</div>
+              <a href="https://www.youtube.com/watch?v=sQ22pm-xvrE">
+                <div className="text-orange-600 text-3xl">▶</div>
+              </a>
             </div>
             {/* Pulsing Rings */}
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="absolute w-32 h-32 border-2 border-white rounded-full animate-ping opacity-20"></span>
               <span className="absolute w-40 h-40 border-2 border-white rounded-full animate-ping delay-200 opacity-10"></span>
             </div>
-            <p className="mt-4 text-center text-sm tracking-widest uppercase text-white opacity-70">
+            <p className="mt-4  text-center text-sm tracking-widest uppercase text-white opacity-70">
               Watch How We Work
             </p>
           </div>
@@ -209,12 +210,12 @@ export default function page() {
           </div>
 
           {/* Main Content */}
-          <div className="grid lg:grid-cols-2 gap-12   ">
+          <div className="grid lg:grid-cols-2 gap-12 w-full">
             {/* Left side Steps */}
             <div className="space-y-10">
               {/* Step 1 */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <div className="border p-4 shadow-sm flex-1 min-w-0   hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
+                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
                   <h4 className="text-base sm:text-lg font-semibold">
                     Make an Appointment
                   </h4>
@@ -233,7 +234,7 @@ export default function page() {
                 <span className="text-orange-600 text-5xl sm:text-6xl font-bold order-1 sm:order-none">
                   2<sup>nd</sup>
                 </span>
-                <div className="border p-4 shadow-sm flex-1 min-w-0   hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
+                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
                   <h4 className="text-base sm:text-lg font-semibold">
                     Select your services
                   </h4>
@@ -246,7 +247,7 @@ export default function page() {
 
               {/* Step 3 */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <div className="border p-4 shadow-sm flex-1 min-w-0   hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
+                <div className="border p-4 shadow-sm flex-1 min-w-0 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
                   <h4 className="text-base sm:text-lg font-semibold">
                     Confirm for services
                   </h4>
@@ -261,12 +262,12 @@ export default function page() {
               </div>
             </div>
 
-            {/* Right Side Image */}
-            <div className="relative">
+            {/* Right Side Image - Fully Right-Aligned */}
+            <div className="relative flex right-0 justify-end">
               <img
                 src="https://unicktheme.com/lsicool/assets/images/resources/work-v2-img1.png"
                 alt="Technician"
-                className="w-[35rem] mx-auto   "
+                className="w-[35rem] ml-auto"
               />
             </div>
           </div>
@@ -303,39 +304,9 @@ export default function page() {
               </p>
             </div>
           </div> */}
-          <div className="py-10 px-6 md:px-2 bg-white">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
-        {/* Box 1 */}
-        <div className="border border-orange-500 p-10 rounded-xl shadow-md hover:shadow-xl transition duration-300">
-          <div className="mb-6 flex justify-center">
-            <FaClock className="text-6xl text-orange-500" />
-          </div>
-          <h3 className="text-xl font-bold text-black mb-1">Get Service</h3>
-          <p className="text-lg font-semibold text-black">Within 45 mins</p>
-        </div>
-
-        {/* Box 2 */}
-        <div className="border border-orange-500 p-10 rounded-xl shadow-md hover:shadow-xl transition duration-300">
-          <div className="mb-6 flex justify-center">
-            <FaCalendarCheck className="text-6xl text-orange-500" />
-          </div>
-          <h3 className="text-xl font-bold text-black mb-1">24 Hours Appointment</h3>
-          <p className="text-lg font-semibold text-black">Booking</p>
-        </div>
-
-        {/* Box 3 */}
-        <div className="border border-orange-500 p-10 rounded-xl shadow-md hover:shadow-xl transition duration-300">
-          <div className="mb-6 flex justify-center">
-            <FaUsers className="text-6xl text-orange-500" />
-          </div>
-          <h3 className="text-xl font-bold text-black mb-1">Serve 10,000+</h3>
-          <p className="text-lg font-semibold text-black">Customers</p>
-        </div>
-      </div>
-    </div>
         </div>
       </section>
-
+      <StatsOfNumbers />
       <section className="py-6 bg-white text-center">
         <div className="mb-4 text-orange-600 font-semibold tracking-wide uppercase">
           ✦ Partners ✦
@@ -372,10 +343,34 @@ export default function page() {
               style={{
                 display: "flex",
                 gap: "64px",
-                animation: "scrollRight 30s linear infinite",
+                animation: "scrollRight 50s linear infinite",
               }}
             >
               {[
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
+                "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
                 "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
                 "https://marpol.co.uk/wp-content/uploads/Bellway-logo-clients-black-white.jpg",
                 "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
