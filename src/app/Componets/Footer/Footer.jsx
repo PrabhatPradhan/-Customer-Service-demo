@@ -223,7 +223,8 @@ export default function Footer() {
         <div className="space-x-4 mt-2 md:mt-0">
           <span>Sitemap</span>
           <span>•</span>
-          <span>Privacy Policy</span>
+          <span><Link  href="/privacyPolicyPage"
+                className="hover:text-white transition">PrivacyPolicy</Link></span>
           <span>•</span>
           <span>Terms of use</span>
         </div>

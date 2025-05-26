@@ -145,14 +145,23 @@ export default function Hero() {
           Special Services
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">
-          THE HIGH STANDARD TRUSTED &<br />
-          <span className="text-white">PROFESSIONAL SERVICE</span>
+          All Appliance Repair Service &<br />
+          <span className="text-white">In One Platform</span>
         </h2>
         <p className="text-sm md:text-base text-white mt-6 max-w-4xl mx-auto leading-relaxed">
           In Indian family now a days uses at least 8 to 12 electrical
           appliances like Air Conditioners, Microwave Oven, Refrigerator,
           Washing Machine and electronic devices of variable brands & everyday
-          each individual faces such small or big problems.
+          each individual faces such small or big problems. If you are looking
+          for the best Home Appliances Repairing Company in India as well as
+          Kolkata then NEWTACK Service Platform is the leading Company, which
+          provides complete repairing and maintenance service like Air
+          Conditioner Repairing, Geyser Repairing, Refrigerator Repairing,
+          Washing machine Repairing, LED TV Repairing, and Microwave Oven
+          Repairing in Kolkata at the most affordable rates. With the latest
+          advancements in the home appliance and electronics goods sector in
+          recent times you need the experts in the field to stay up to date with
+          the latest technology and
         </p>
       </section>
     </>

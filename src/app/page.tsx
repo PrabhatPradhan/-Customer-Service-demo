@@ -8,10 +8,16 @@ import ServiceCenterCard from "./Componets/ServiceCenterCard/ServiceCenterCard"
 import WhyWeAreBest from "./Componets/WhyWeAreBest/WhyWeAreBest"
 import FloatingContactButtons from "./Componets/FloatingContactButtons/FloatingContactButtons"
 import ScrollToTopButton from "./Componets/ScrollToTopButton/ScrollToTopButton"
+import InfiniteSlider from "./Componets/InfiniteSlider/InfiniteSlider"
 export default function Home() {
   return (
    <>
+   
+     
+
+     
    <Navbar/>
+   
    <Hero/>
    <FloatingContactButtons/>
    

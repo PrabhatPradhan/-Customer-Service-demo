@@ -63,19 +63,26 @@ const FAQItem = ({ faq }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white shadow-lg rounded-xl overflow-hidden">
+    <div className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between px-6 py-4 text-left transition duration-400 cursor-pointer"
+        className="w-full bg-orange-400 flex items-center justify-between px-6 py-4 text-left transition duration-400 cursor-pointer"
       >
         <span className="text-lg font-semibold text-gray-800">{faq.question}</span>
-        <FaChevronDown className={`transition-transform duration-300 ${open ? 'rotate-180' : ''}`} />
+        <FaChevronDown
+          className={`transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+        />
       </button>
-      {open && (
-        <div className="px-6 pb-4 text-gray-600">
+
+      <div
+        className={`grid transition-all duration-500 ease-in-out ${
+          open ? "grid-rows-[1fr] opacity-100 py-4 px-8" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden text-gray-600">
           {faq.answer}
         </div>
-      )}
+      </div>
     </div>
   );
 };
@@ -88,11 +95,11 @@ export default function Page() {
       <EnquiryForm />
    <section
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1713557112617-e12d67bddc3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, // Replace with actual image path or URL
+          backgroundImage: `url('https://t4.ftcdn.net/jpg/13/39/27/63/360_F_1339276324_nCmzvU4dOdgkRmkcahfo9IvuBcM5tmwb.jpg')`, // Replace with actual image path or URL
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="bg-gradient-to-r from-[#f0f4ff] to-[#eaf0fc] py-16 px-[5%] flex flex-col md:flex-row items-center justify-between"
+        className="bg-gradient-to-r mt from-[#f0f4ff] to-[#eaf0fc] py-16 px-[5%] flex flex-col md:flex-row items-center justify-between"
       >
         <div>
           <h1 className="text-4xl mt-10 md:text-5xl font-bold text-[#0f172a] mb-2">
@@ -106,7 +113,7 @@ export default function Page() {
       </section>
     <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       
-      <div className="mt-12 w-4/5 mx-auto space-y-4">
+      <div className="mt-12 w-4/5   mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <FAQItem key={index} faq={faq} />
         ))}

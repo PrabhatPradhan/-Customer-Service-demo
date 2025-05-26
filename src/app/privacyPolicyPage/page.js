@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
       <EnquiryForm />
       <section
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1713557112617-e12d67bddc3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          backgroundImage: `url('https://www.mothersrecipe.com/cdn/shop/files/privacy-policy.png?v=1689226683')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -33,7 +33,8 @@ export default function PrivacyPolicyPage() {
         <div className="flex flex-col md:flex-row items-center justify-between w-full px-6 py-12 bg-gradient-to-r from-blue-50 to-white">
           <div className="md:w-1/2 space-y-4 text-center md:text-left">
             <h1 className="text-3xl md:text-4xl font-bold">
-              <span className="text-orange-400">Privacy Policies</span> are required
+              <span className="text-orange-500">Privacy Policies</span> are
+              required
               <br />
               by law get compliant today
             </h1>
@@ -46,52 +47,129 @@ export default function PrivacyPolicyPage() {
             <img
               src="https://t4.ftcdn.net/jpg/06/28/95/19/360_F_628951920_Wpi0yQTeJ16NGVC37WkCOsRoDqTMxCqU.jpg"
               alt="Privacy document illustration"
-              width={400}
+              width={500}
               height={700}
             />
           </div>
         </div>
 
-        <section className="mt-20">
-          <h2 className="text-2xl font-bold text-center mb-10">
-            Best feature of Privacy Policies
-          </h2>
-          <div className="grid md:grid-cols-3 gap-10">
-            <Feature
-              title="Protect yourself and your business"
-              description="Not knowing the laws and regulations can expose you and your business to a liability in a number of different ways. Our service can help you prepare policies that are current and compliant with the latest government, legal, and service requirements."
-            />
-            <Feature
-              title="Save thousands on legal fees"
-              description="Our attorney-drafted policies are completely free for personal and non-commercial use. We also offer affordable paid solutions to additional and advanced premium features at a fraction of the cost of hiring a lawyer."
-            />
-            <Feature
-              title="Global coverage"
-              description="We make every effort to cover every country&rsquo;s laws and regulations by including the strictest guidelines implemented in each country. Let us serve you wherever you are with a custom-tailored policy according just for you."
-            />
-            <Feature
-              title="No more generic templates"
-              description="Only a few steps now, can accurately describe your website, mobile app, blog, store, or your message and we&rsquo;ll do the rest. Easily build the initiatives you need to operate and maintain the information you provide for the best results."
-            />
-            <Feature
-              title="Automatic updates"
-              description="With so many different and ever-changing laws it can be hard to keep up to date with the latest legal requirements. Let us do the hard work and notify you of the changes when we know you are running and improving your product and business."
-            />
-            <Feature
-              title="Copy or host the documents"
-              description="We can host your generated policies for you for free so you don&rsquo;t need any server-side backend component if you don&rsquo;t want that. We would like to have full control over your documents and you can easily copy the policies to your site or app as well."
-            />
-          </div>
-        </section>
+        <div className="bg-white text-gray-500 px-4 py-12 sm:px-6 lg:px-1  max-w-6xl mx-auto">
+           
 
-        <section className="mt-20">
+          <p className="mb-4 text-sm sm:text-base">
+            At <strong>Authorised
+Customer Service
+</strong>, we respect your privacy and are
+            committed to protecting your personal data. This Privacy Policy
+            outlines how we collect, use, and safeguard your information when
+            you use our services.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-8 mb-2 text-orange-500">
+            1. Information We Collect
+          </h2>
+          <ul className="list-disc pl-6 space-y-2 text-sm sm:text-base">
+            <li>
+              Personal information (e.g., name, email, phone number) you provide
+              during sign-up or contact.
+            </li>
+            <li>
+              Device data like IP address, browser type, and operating system.
+            </li>
+            <li>
+              Usage data such as pages visited, time spent, and interactions
+              with our website.
+            </li>
+          </ul>
+
+          <h2 className="text-xl font-semibold mt-8 mb-2 text-orange-500">
+            2. How We Use Your Information
+          </h2>
+          <ul className="list-disc pl-6 space-y-2 text-sm sm:text-base">
+            <li>To provide and maintain our services.</li>
+            <li>
+              To communicate with you, including responses to inquiries and
+              service updates.
+            </li>
+            <li>
+              To improve user experience and optimize website performance.
+            </li>
+            <li>To comply with legal obligations.</li>
+          </ul>
+
+          <h2 className="text-xl font-semibold mt-8 mb-2 text-orange-500">
+            3. Sharing Your Information
+          </h2>
+          <p className="text-sm sm:text-base">
+            We do not sell your personal information. However, we may share your
+            data with:
+          </p>
+          <ul className="list-disc pl-6 space-y-2 text-sm sm:text-base mt-2">
+            <li>
+              Service providers who help us operate our business (e.g., hosting,
+              analytics).
+            </li>
+            <li>
+              Legal authorities when required by law or to protect our rights.
+            </li>
+          </ul>
+
+          <h2 className="text-xl font-semibold mt-8 mb-2 text-orange-500">
+            4. Data Security
+          </h2>
+          <p className="text-sm sm:text-base">
+            We implement security measures to protect your data. However, no
+            online transmission or storage is 100% secure.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-8 mb-2 text-orange-500">
+            5. Your Rights
+          </h2>
+          <p className="text-sm sm:text-base mb-2">You have the right to:</p>
+          <ul className="list-disc pl-6 space-y-2 text-sm sm:text-base">
+            <li>Access, update, or delete your personal data.</li>
+            <li>Withdraw consent for data processing at any time.</li>
+            <li>
+              Lodge a complaint with your local data protection authority.
+            </li>
+          </ul>
+
+          <h2 className="text-xl font-semibold mt-8 mb-2 text-orange-500">
+            6. Cookies
+          </h2>
+          <p className="text-sm sm:text-base">
+            We use cookies to improve user experience. You can control cookie
+            settings in your browser.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-8 mb-2 text-orange-500">
+            7. Updates to This Policy
+          </h2>
+          <p className="text-sm sm:text-base">
+            We may update this Privacy Policy from time to time. Any changes
+            will be posted on this page with a revised date.
+          </p>
+
+          <h2 className="text-xl font-semibold mt-8 mb-2 text-orange-500">
+            8. Contact Us
+          </h2>
+          <p className="text-sm sm:text-base">
+            If you have any questions or concerns, please contact us at: <br />
+            <strong>Email:</strong> support@yourcompany.com <br />
+            <strong>Phone:</strong> +1 (123) 456-7890
+          </p>
+
+          
+        </div>
+
+        {/* <section className="mt-20">
           <h2 className="text-2xl font-bold text-center mb-6">
             Privacy Policies with global coverage
           </h2>
           <p className="text-center text-gray-600 max-w-3xl mx-auto">
             Almost every country in the world has some kind of privacy law to
-            protect their citizen&rsquo;s personal information. That&rsquo;s why every
-            Privacy Policy we generate is adapted to comply with the major
+            protect their citizen&rsquo;s personal information. That&rsquo;s why
+            every Privacy Policy we generate is adapted to comply with the major
             privacy laws relevant to you. Just tell us where you operate and
             we&rsquo;ll customize your Privacy Policy accordingly.
           </p>
@@ -101,8 +179,8 @@ export default function PrivacyPolicyPage() {
               <p className="text-gray-600">
                 CCPA & CalOPPA protect personal data belonging to residents of
                 California. If you collect or store information from users in
-                the US, we&rsquo;ll make sure your Privacy Policy complies with CCPA &amp;
-                CalOPPA laws.
+                the US, we&rsquo;ll make sure your Privacy Policy complies with
+                CCPA &amp; CalOPPA laws.
               </p>
             </div>
             <div>
@@ -121,7 +199,7 @@ export default function PrivacyPolicyPage() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
 
       <StatsOfNumbers />

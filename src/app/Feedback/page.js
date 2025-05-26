@@ -86,7 +86,7 @@ export default function Page() {
           {/* Form */}
           <div className="bg-white shadow-xl rounded-xl p-4 w-full max-w-md mx-auto">
             <h2 className="text-xl font-bold text-gray-800 mb-2 text-center">Feedback Form</h2>
-            <p className="text-gray-600 text-center mb-3 text-sm">We&apos;d love to hear your thoughts!</p>
+            <p className="text-gray-600 text-center mb-3 text-sm"> We&apos;d love to hear your thoughts! </p>
             <form className="space-y-3" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Your Name</label>

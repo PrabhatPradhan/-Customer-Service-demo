@@ -49,9 +49,9 @@ export default function EnquiryForm() {
 
       {/* Popup Modal */}
       {show && (
-        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/50">
+        <div className="fixed inset-0 z-40 flex items-center justify-center  ">
           <div
-            className={`relative rounded-xl shadow-2xl w-full max-w-6xl max-h-[90vh] mx-4 md:mx-10 p-6 md:p-10 grid md:grid-cols-2 overflow-y-auto
+            className={`relative rounded-xl shadow-2xl w-full  max-w-6xl max-h-[90vh] mx-4 md:mx-10 p-6 md:p-10 grid md:grid-cols-2 overflow-y-auto
               transform transition-all duration-500 ease-out
               ${animate ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}
             `}
@@ -124,25 +124,25 @@ export default function EnquiryForm() {
 
               <div className="grid grid-cols-3 text-center border-b pb-6">
                 <div>
-                  <MdEmojiPeople className="text-4xl text-green-600 mx-auto" />
+                  <MdEmojiPeople className="text-4xl text-orange-500 mx-auto" />
                   <p className="text-xl font-bold mt-2">25k</p>
                   <p className="text-sm">Happy Traveler</p>
                 </div>
                 <div>
-                  <MdStars className="text-4xl text-green-600 mx-auto" />
+                  <MdStars className="text-4xl text-orange-500 mx-auto" />
                   <p className="text-xl font-bold mt-2">45k</p>
                   <p className="text-sm">Tours Success</p>
                 </div>
                 <div>
-                  <MdThumbUp className="text-4xl text-green-600 mx-auto" />
+                  <MdThumbUp className="text-4xl text-orange-500 mx-auto" />
                   <p className="text-xl font-bold mt-2">30k</p>
                   <p className="text-sm">Positive Reviews</p>
                 </div>
               </div>
 
               <div className="pt-4 text-sm pl-4">
-                <p className="font-bold text-green-800">
-                  Excellent! <span className="inline-block text-green-600">⬤ ⬤ ⬤ ⬤ ◯</span>{" "}
+                <p className="font-bold text-orange-500">
+                  Excellent! <span className="inline-block text-orange-600">⬤ ⬤ ⬤ ⬤ ◯</span>{" "}
                   4.5 Rating Out of 5.0
                 </p>
                 <p>Based on 526 reviews</p>
@@ -166,7 +166,7 @@ export default function EnquiryForm() {
       {/* Submission Popup */}
       {submitted && (
         <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-2 rounded shadow-lg z-50">
-          Enquiry submitted successfully!
+!          Enquiry submitted successfully
         </div>
       )}
     </>

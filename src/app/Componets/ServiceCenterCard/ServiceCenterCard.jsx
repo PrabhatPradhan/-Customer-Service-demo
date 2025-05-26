@@ -11,7 +11,7 @@ export default function ServiceCenterCard() {
       setIsVisible(true);
       // Start animation after it's visible
       setTimeout(() => setAnimateIn(true), 50);
-    }, 4000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);

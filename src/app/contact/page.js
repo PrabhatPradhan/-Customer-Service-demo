@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Footer from "../Componets/Footer/Footer";
 import Navbar from "../Componets/Navbar/Navbar";
@@ -18,11 +19,11 @@ export default function Page() {
         {/* Header Section */}
         <section
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1713557112617-e12d67bddc3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`, // Replace with actual image path or URL
+            backgroundImage: `url('https://api.mintoholidays.com/uploads/page/1742303431977.jpg')`, // Replace with actual image path or URL
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="bg-gradient-to-r from-[#f0f4ff] to-[#eaf0fc] py-16 px-[5%] flex flex-col md:flex-row items-center justify-between"
+          className="bg-gradient-to-r mt-8 from-[#f0f4ff] to-[#eaf0fc] py-16 px-[5%] flex flex-col md:flex-row items-center justify-between"
         >
           <div>
             <h1 className="text-4xl mt-10 md:text-5xl font-bold text-[#0f172a] mb-2">
