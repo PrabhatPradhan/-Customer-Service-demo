@@ -1,5 +1,5 @@
 
-import InfiniteSlider from '@/components/InfiniteSlider';
+ 
 import React from 'react'
 export default function InfiniteSlider() {
     const imageUrls = [
