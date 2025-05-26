@@ -162,44 +162,7 @@ Customer Service
           
         </div>
 
-        {/* <section className="mt-20">
-          <h2 className="text-2xl font-bold text-center mb-6">
-            Privacy Policies with global coverage
-          </h2>
-          <p className="text-center text-gray-600 max-w-3xl mx-auto">
-            Almost every country in the world has some kind of privacy law to
-            protect their citizen&rsquo;s personal information. That&rsquo;s why
-            every Privacy Policy we generate is adapted to comply with the major
-            privacy laws relevant to you. Just tell us where you operate and
-            we&rsquo;ll customize your Privacy Policy accordingly.
-          </p>
-          <div className="grid md:grid-cols-3 gap-10 mt-10 text-center">
-            <div>
-              <h3 className="text-lg font-semibold">CCPA & CalOPPA</h3>
-              <p className="text-gray-600">
-                CCPA & CalOPPA protect personal data belonging to residents of
-                California. If you collect or store information from users in
-                the US, we&rsquo;ll make sure your Privacy Policy complies with
-                CCPA &amp; CalOPPA laws.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold">GDPR</h3>
-              <p className="text-gray-600">
-                GDPR controls data privacy in the EU. If your business processes
-                data from EU customers or site/app users, we will ensure your
-                Privacy Policy includes the necessary GDPR wording.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold">The rest of the world</h3>
-              <p className="text-gray-600">
-                Our Privacy Policies are adapted to fit with laws from areas
-                around the world to keep your business safe.
-              </p>
-            </div>
-          </div>
-        </section> */}
+       
       </div>
 
       <StatsOfNumbers />
@@ -208,11 +171,4 @@ Customer Service
   );
 }
 
-function Feature({ title, description }) {
-  return (
-    <div className="p-4 border rounded-lg shadow hover:shadow-md transition">
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm">{description}</p>
-    </div>
-  );
-}
+ 

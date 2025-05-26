@@ -1,3 +1,6 @@
+
+import InfiniteSlider from '@/components/InfiniteSlider';
+import React from 'react'
 export default function InfiniteSlider() {
     const imageUrls = [
       "https://upload.wikimedia.org/wikipedia/commons/d/d4/WeWork_logo.png",
@@ -46,4 +49,7 @@ export default function InfiniteSlider() {
       </div>
     );
   }
+  
+
+  
   
